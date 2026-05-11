@@ -48,7 +48,7 @@ export default function App() {
 
   useEffect(() => {
     if (isLoggedIn) {
-      if (userEmail === 'MNIrfan33@gmail.com' || userEmail === 'admin@petak.id') {
+      if (userEmail === 'controlpanel123@gmail.com' || userEmail === 'admin@petak.id') {
         setIsAdmin(true);
         setView('admin');
       } else {
@@ -215,7 +215,7 @@ export default function App() {
       <main className={cn("max-w-7xl mx-auto px-6 py-8", view === 'admin' && "max-w-full")}>
         <AnimatePresence mode="wait">
           {view === 'admin' && (
-            <AdminDashboard key="admin" />
+            <AdminDashboard key="admin" onLogout={() => setIsLoggedIn(false)} />
           )}
 
           {view === 'dashboard' && (

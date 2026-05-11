@@ -78,7 +78,11 @@ type AdminTab =
   | 'settings' 
   | 'audit';
 
-const AdminDashboard: React.FC = () => {
+interface AdminDashboardProps {
+  onLogout: () => void;
+}
+
+const AdminDashboard: React.FC<AdminDashboardProps> = ({ onLogout }) => {
   const [activeTab, setActiveTab] = useState<AdminTab>('overview');
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
@@ -93,7 +97,7 @@ const AdminDashboard: React.FC = () => {
   };
 
   const users: UserManagementRecord[] = [
-    { id: 'usr-001', fullName: 'MN Irfan', username: 'irfannn', email: 'MNIrfan33@gmail.com', phone: '08123456789', status: 'Aktif', kycStatus: 'Verified', createdAt: '2024-01-10' },
+    { id: 'usr-001', fullName: 'MN Irfan', username: 'irfannn', email: 'controlpanel123@gmail.com', phone: '08123456789', status: 'Aktif', kycStatus: 'Verified', createdAt: '2024-01-10' },
     { id: 'usr-002', fullName: 'Budi Santoso', username: 'budis', email: 'budi@example.com', phone: '08198765432', status: 'Aktif', kycStatus: 'Pending', createdAt: '2024-03-15' },
     { id: 'usr-003', fullName: 'Siti Aminah', username: 'sitiam', email: 'siti@example.com', phone: '08521122334', status: 'Terblokir', kycStatus: 'Rejected', createdAt: '2023-11-20' },
   ];
@@ -225,9 +229,9 @@ const AdminDashboard: React.FC = () => {
                  <p className="text-xs font-black text-zinc-900 truncate">Super Admin</p>
                  <p className="text-[10px] font-medium text-zinc-400 truncate">admin@petak.id</p>
               </div>
-              <button className={cn("text-zinc-400 hover:text-rose-500", !isSidebarOpen && "hidden")}>
-                 <LogOut className="w-4 h-4" />
-              </button>
+<button className={cn("text-zinc-400 hover:text-rose-500", !isSidebarOpen && "hidden")} onClick={onLogout}>
+                     <LogOut className="w-4 h-4" />
+                  </button>
            </div>
         </div>
       </aside>

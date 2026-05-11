@@ -29,17 +29,12 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLogin, onGoToRegister }) => {
     // Simulate login
     setTimeout(() => {
       if (
-        email === 'demo@petak.id' || 
-        email === 'admin@petak.id' || 
-        email === 'user@petak.id' || 
-        email === 'MNIrfan33@gmail.com'
+        email === 'demo@petak.id' ||
+        email === 'admin@petak.id' ||
+        email === 'user@petak.id' ||
+        (email === 'controlpanel123@gmail.com' && password === 'controlpanel123')
       ) {
-        if (password === 'petak123' || password === 'password' || email === 'MNIrfan33@gmail.com') {
-          onLogin(email);
-        } else {
-          setError('Kata sandi salah.');
-          setLoading(false);
-        }
+        onLogin(email);
       } else {
         setError('Username atau kata sandi salah. Silakan coba lagi.');
         setLoading(false);
@@ -85,8 +80,8 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLogin, onGoToRegister }) => {
                 <div className="flex flex-col items-center mb-10">
                   <div className="w-32 h-32 mb-6 bg-zinc-50 rounded-3xl flex items-center justify-center p-2 border border-zinc-100 shadow-sm">
                     <img 
-                      src="/src/assets/images/regenerated_image_1778308433588.png" 
-                      alt="Petak Logo" 
+src="/src/assets/images/regenerated_image_1778308433588.png"
+                       alt="Petak Logo"
                       className="w-full h-full object-contain"
                       referrerPolicy="no-referrer"
                     />
