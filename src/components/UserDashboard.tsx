@@ -177,7 +177,7 @@ const UserDashboard: React.FC<UserDashboardProps> = ({ userEmail, onStartValidat
       id: 'prop-001',
       name: 'Modern Renovation - Tebet House',
       type: 'Rumah',
-      image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=80&w=800',
+      image: '/src/assets/images/building-tebet.jpg',
       location: 'Tebet, Jakarta Selatan',
       description: 'Proyek renovasi rumah tua menjadi hunian modern minimalis dengan target capital gain tinggi melalui strategi buy-rehab-sell.',
       totalTarget: 2500000000,
@@ -199,7 +199,7 @@ const UserDashboard: React.FC<UserDashboardProps> = ({ userEmail, onStartValidat
       id: 'prop-002',
       name: 'Co-Living Space - Gading Serpong',
       type: 'Ruko',
-      image: 'https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&fit=crop&q=80&w=800',
+      image: '/src/assets/images/building-gading-serpong.jpg',
       location: 'Gading Serpong, Tangerang',
       description: 'Konversi ruko 3 lantai menjadi unit hunian bersama (co-living) premium untuk pasar profesional muda.',
       totalTarget: 4000000000,
@@ -221,7 +221,7 @@ const UserDashboard: React.FC<UserDashboardProps> = ({ userEmail, onStartValidat
       id: 'prop-003',
       name: 'The Arkhaven - Uluwatu Villa',
       type: 'Villa',
-      image: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&q=80&w=800',
+      image: '/src/assets/images/villa-uluwatu.jpg',
       location: 'Uluwatu, Bali',
       description: 'Investment opportunity dalam villa mewah dengan pemandangan laut 180 derajat. Yield tinggi dari pasar sewa harian wisatawan mancanegara.',
       totalTarget: 8500000000,
@@ -243,7 +243,7 @@ const UserDashboard: React.FC<UserDashboardProps> = ({ userEmail, onStartValidat
       id: 'prop-004',
       name: 'Creative Hub - SCBD Loft',
       type: 'Apartemen',
-      image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800',
+      image: '/src/assets/images/building-scbc-loft.jpg',
       location: 'Senopati, Jakarta Selatan',
       description: 'Transformasi unit loft industrial menjadi private creative office & co-working space eksklusif di pusat bisnis Jakarta.',
       totalTarget: 3200000000,
@@ -265,7 +265,7 @@ const UserDashboard: React.FC<UserDashboardProps> = ({ userEmail, onStartValidat
       id: 'prop-005',
       name: 'Boutique Hotel - Dago Highland',
       type: 'Lainnya',
-      image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=800',
+      image: '/src/assets/images/hotel-dago.jpg',
       location: 'Dago, Bandung',
       description: 'Pengambilalihan dan efisiensi operasional hotel butik 20 kamar dengan pemandangan kota Bandung yang ikonik.',
       totalTarget: 12500000000,
@@ -1053,7 +1053,7 @@ const UserDashboard: React.FC<UserDashboardProps> = ({ userEmail, onStartValidat
                      <h3 className="text-sm font-black text-zinc-900 uppercase tracking-widest mb-6">Informasi Aset</h3>
                      <div className="space-y-4">
                         <div className="aspect-video bg-zinc-100 rounded-3xl overflow-hidden border border-zinc-100 mb-6">
-                           <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800" alt="Asset" className="w-full h-full object-cover" />
+                           <img src="/src/assets/images/building-generic.jpg" alt="Asset" className="w-full h-full object-cover" />
                         </div>
                         <div className="flex justify-between items-center py-3 border-b border-zinc-50">
                            <span className="text-xs font-bold text-zinc-400 uppercase">Tipe Aset</span>
