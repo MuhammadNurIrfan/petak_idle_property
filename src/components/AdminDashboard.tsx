@@ -225,13 +225,13 @@ const AdminDashboard: React.FC<AdminDashboardProps> = ({ onLogout }) => {
         <div className="p-4 border-t border-zinc-100">
            <div className={cn("p-4 bg-zinc-50 rounded-2xl flex items-center gap-3", !isSidebarOpen && "justify-center px-2")}>
               <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700 font-bold shrink-0">AD</div>
-              <div className={cn("flex-1 overflow-hidden", !isSidebarOpen && "hidden")}>
-                 <p className="text-xs font-black text-zinc-900 truncate">Super Admin</p>
-                 <p className="text-[10px] font-medium text-zinc-400 truncate">admin@petak.id</p>
-              </div>
-<button className={cn("text-zinc-400 hover:text-rose-500", !isSidebarOpen && "hidden")} onClick={onLogout}>
-                     <LogOut className="w-4 h-4" />
-                  </button>
+               <div className={cn("flex-1 overflow-hidden", !isSidebarOpen && "hidden")}>
+                  <p className="text-xs font-black text-zinc-900 truncate">Super Admin</p>
+                  <p className="text-[10px] font-medium text-zinc-400 truncate">admin@petak.id</p>
+               </div>
+               <button className={cn("text-zinc-400 hover:text-rose-500", !isSidebarOpen && "hidden")} onClick={onLogout}>
+                  <LogOut className="w-4 h-4" />
+               </button>
            </div>
         </div>
       </aside>

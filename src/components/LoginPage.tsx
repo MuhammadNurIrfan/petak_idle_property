@@ -80,7 +80,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLogin, onGoToRegister }) => {
                 <div className="flex flex-col items-center mb-10">
                   <div className="w-32 h-32 mb-6 bg-zinc-50 rounded-3xl flex items-center justify-center p-2 border border-zinc-100 shadow-sm">
                     <img 
-src="/src/assets/images/regenerated_image_1778308433588.png"
+src="/images/regenerated_image_1778308433588.png"
                        alt="Petak Logo"
                       className="w-full h-full object-contain"
                       referrerPolicy="no-referrer"

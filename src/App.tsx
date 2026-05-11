@@ -154,7 +154,7 @@ export default function App() {
           >
             <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center p-0.5 border border-zinc-100 shadow-sm overflow-hidden">
               <img
-                src="/src/assets/images/logo-petak-v3.png"
+                src="/images/logo-petak-v3.png"
                 alt="Petak Logo"
                 className="w-full h-full object-contain"
                 referrerPolicy="no-referrer"
